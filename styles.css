@@ -1,10 +1,25 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
+.grid {
     display: grid;
-    grid-template-columns: 300px 300px 400px;
-    grid-template-rows: 5em 5rem;
-}
+    grid-template: 100px 100px 100px / 200px 200px 200px 200px;
+  }
+  
+  .grid-item {
+    color: white;
+    padding: 1em 2em;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .one {
+      background: #B823C1;
+      grid-column: 2 / span 2;
+      grid-row: span 1;
+  }
+  
+  .two {
+      background: #FF5670;
+      grid-column: 1 / -2;
+  }
